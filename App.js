@@ -7,7 +7,7 @@ export default App = () => {
   const [weatherData, setWeatherData] = useState(null);
   const [error, setError] = useState(null);
 
-  const API_KEY = '59acd3c1d43c4527b7e231739241902';
+  const API_KEY = '505d2b219c1a46fda9802028242002 ';
   
   const getWeather = async () => {
     try{
@@ -59,7 +59,7 @@ export default App = () => {
       <View style={styles.container2}>
       <TextInput
       style={styles.textInput}
-      placeholder='Enter city name'
+      placeholder='Enter city name' 
       value={city}
       onChangeText={(text) => setCity(text)}
       />
@@ -100,7 +100,7 @@ const styles =StyleSheet.create({
   container4:{
     alignItems: 'center',
     backgroundColor: '#FEECE2',
-    padding: 10
+    padding: 15
   },
   title: {
     textAlign: 'center',
